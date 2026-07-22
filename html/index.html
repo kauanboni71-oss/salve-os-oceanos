@@ -1,0 +1,325 @@
+<!DOCTYPE html> <!-- Define o tipo do documento -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../img/baleia.ico" type="imagem/x-icon">
+    <title>Salve os Oceanos</title> <!-- Título da aba do navegador -->
+     <link rel="stylesheet" href="../css/styles.css">  <!-- Importa o arquivo CSS -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+    <style>
+    
+    #splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s ease;
+    }
+    
+    #splash-screen img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    #splash-screen h1 {
+        position: relative;
+        z-index: 2;
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        animation: pulse 2.5s;
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+    
+    /* Conteúdo Principal */
+    #main-content {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .show-content {
+        opacity: 1 !important;
+    }
+
+    </style>
+    <!-- Tela de Carregamento -->
+    <div id="splash-screen"> <!-- Div de carregamento inicial -->
+        <img src="../img/Alo-CETESB-trouxe-a-tona-o-Lixo-Plastico-no-Mar.jpeg" alt="Imagem do Oceano"> <!-- Imagem da tela de carregamento -->
+        <h1>Salve o Oceano</h1> <!-- Título centralizado na tela de carregamento -->
+    </div>
+
+    <!-- Página Principal -->
+    <div id="main-content">
+        <header>
+            <div class="nav-container">
+                <a class="logo"><i>🌊</i> Impactos no oceano</a>
+                <nav>
+                    <a href="index.html" class="nav-link active">Poluição</a> 
+                    <a href="micro.html" class="nav-link">Microplásticos</a> 
+                    <a href="esgoto.html" class="nav-link">Efluentes</a>
+                    <a href="vida.html" class="nav-link">Vida Marinha</a>   
+               </nav>
+      
+               <nav class="secondary-menu">
+                <a href="#" class="menu-toggle" id="menuToggle">
+                  <i class="icon-menu">☰</i> 
+                </a>
+                <ul class="submenu" id="submenu">
+                    <li><a href="index.html">Poluição</a>
+                    <li><a href="esgoto.html">Efluentes</a></li>  
+                    <li><a href="micro.html">Microplástico</a></li>
+                    <li><a href="vida.html">Vida marinha</a></li>
+                    <li><a href="pesca.html">Pesca predatória</a></li>
+                    <li><a href="clima.html">Climatização</a></li>
+                    <li><a href="acidificação.html">Acidificação</a></li>
+                    <li><a href="barco.html">Barcos</a></li>
+                    <li><a href="exploração.html">Exploração de petróleo </a></li> 
+                    <li><a href="contaminação.html">Contaminação de metais</a></li>
+                    <li><a href="ajude.html">Ajude o Mar</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+              </nav>
+            </div>
+          </header>
+        </div>
+      
+
+        </header>
+      </div>
+        </header>
+
+
+                <button onclick="lerPagina()" onmouseover="lerTexto('Ler página')" style="margin: 1rem; padding: 0.5rem 1rem; font-size: 1rem;">
+                    🔊 Ler Página
+                </button>  <!-- Botão para leitura da página -->
+                
+
+            <main> <!-- Conteúdo principal -->
+                <section id="introdução"> <!-- Seção de introdução -->
+                    <h2>A Poluição Marinha</h2> 
+                   <p>Este site foi criado para abordar o tema da poluição oceânica, apresentando o contexto histórico, causas e consequências desse problema global. Aqui você encontrará informações sobre os principais tipos de contaminantes, estudos recentes sobre seus impactos na vida marinha e na saúde humana, além de sugestões de práticas e políticas que podem reduzir o fluxo de resíduos para os oceanos. Navegue pelas seções para entender todos os contextos.</p>
+                    <p>A poluição marinha é um problema antigo, mas que se intensificou com o avanço da industrialização e do crescimento populacional. Desde os tempos mais remotos, os oceanos foram vistos como uma fonte inesgotável de recursos e um local conveniente para descartar resíduos. No entanto, ao longo dos séculos, a poluição de fonte pontual, como derramamentos de petróleo e lançamento de resíduos industriais, também contribui significativamente. A poluição oceânica tem graves consequências para a vida marinha, ecossistemas e para a saúde humana.
+                    </p><hr>  
+
+                    <div class="lista">
+                            <div class="img-st">
+                                <img src="../img/20220803_poluicao_oceano.jpg" loading="lazy">
+                                <p class="row"> Fonte Disponível em: 
+                                    <a href="https://jornal.usp.br/atualidades/o-brasil-esta-entre-os-20-paises-que-mais-contribuem-para-a-poluicao-nos-oceanos/" target="_blank">
+                                    Jornal USP
+                                    </a></p>
+                                </div>
+
+                            <div class="img-st">
+                                <img src="../img/mar-de-lixo-no-caribe-foto-caroline-power-abre.jpg" loading="lazy">
+                                <p class="row"> Fonte Disponível em: 
+                                    <a href="https://images.app.goo.gl/r9xRzK4qe5NNkAoC9/" target="_blank">
+                                    Image do Google
+                                    </a></p>
+                            </div>
+                    </div><hr><br>
+
+                        <p>Grande parte do lixo encontrado nos oceanos, aproximadamente 80%, tem origem em atividades humanas realizadas em terra, sendo transportado até os mares pelos cursos d’água. Esse lixo marinho é composto por materiais sólidos fabricados ou transformados,
+                        como plásticos, bitucas de cigarro, metais, vidros e madeira, que são descartados de forma irregular. Os plásticos, em especial, representam a maior parte desses resíduos e são extremamente preocupantes, pois não se decompõem facilmente e podem permanecer no ambiente por séculos. Esses materiais afetam gravemente a vida marinha, já que muitos animais os confundem com alimento e acabam ingerindo-os,
+                        o que leva à morte de diversas espécies e à contaminação das cadeias alimentares. Além de prejudicar o equilíbrio dos ecossistemas aquáticos, esse acúmulo de lixo também compromete atividades humanas ligadas ao uso das águas, como a pesca, o turismo e o transporte fluvial.
+                        </p>
+               </section>
+
+                <section id="Resíduos ">
+                    <h2>Resíduos encontrado no oceano</h2>
+                    <p>Considerados uma opção saudável de alimentação, os peixes podem, no entanto, carregar resíduos e substâncias nocivas, mesmo quando capturados em regiões oceânicas muito distantes das costas. Isso revela que a poluição marinha não está restrita às áreas litorâneas, mas está se espalhando por todos os recantos dos oceanos.</p>
+                    <p>Um estudo recente, conduzido pelo Instituto Oceanográfico (IO) da USP, registrou a presença de lixo no fundo marinho brasileiro, a profundidades de até 1.500 metros e a 200 km da costa dos estados de São Paulo e Santa Catarina. Durante a pesquisa do projeto Deep-Ocean, pesquisadores recolheram uma grande quantidade de lixo, incluindo garrafas, latas, plásticos e materiais de pesca, além de itens mais prejudiciais, como tintas de embarcações e latas de óleo para motores. A quantidade e variedade de resíduos encontrados foram surpreendentes, considerando a profundidade e a distância das áreas costeiras.</p>
+                    <p>Inicialmente, o projeto tinha como objetivo investigar a fauna de peixes nas regiões mais profundas do oceano, mas a equipe de cientistas foi confrontada com a presença massiva de resíduos acumulados. O plástico foi o material mais predominante, seguido por metais, têxteis e vidro. Esses materiais não só afetam a vida marinha, como também têm o potencial de impactar a saúde humana, uma vez que os contaminantes podem ser transferidos para as cadeias alimentares e chegar aos consumidores.</p>
+                    <hr>
+
+                    <div class="lista">
+                        <div class="img-st">
+                        <img src="../img/lixo-oceano-e1710893080181.webp" loading="lazy">
+                            <p class="row"> Fonte Disponível em: 
+                                <a href="https://www.cnnbrasil.com.br/nacional/pela-primeira-vez-pesquisadores-da-usp-encontram-lixo-no-oceano-profundo/" target="_blank">
+                                    CNN Brasil
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="img-st">
+                                <img src="../img/pM7lmHmd-76fa85e0-dbd9-11ee-a859-f1fc398a4d19-minified.webp" loading="lazy">
+                                <p class="row"> Fonte Disponível em: 
+                                <a href="https://www.funverde.org.br/blog/lixo-ja-e-abundante-no-fundo-do-mar-brasileiro/" target="_blank">
+                                    Funverde
+                                </a></p>
+                        </div>
+                    </div><hr>   
+                    <p>A pesquisa abrangeu 31 pontos ao longo do litoral de São Paulo e Santa Catarina, sendo que em apenas três locais não foram encontrados resíduos. Isso demonstra que a poluição marinha está afetando todos os níveis da coluna d'água, inclusive os mais distantes e menos acessíveis. A maior parte do lixo encontrado é composta por plástico, mas metais e outros materiais também estão presentes, o que levanta preocupações sobre os danos a longo prazo a ecossistemas delicados.</p>
+                    <p>Esse estudo destaca a necessidade urgente de políticas públicas mais rigorosas para combater a poluição dos oceanos, além da implementação de soluções que envolvam a indústria e a sociedade no gerenciamento adequado de resíduos. Sem ações mais eficazes, a poluição continuará a afetar a biodiversidade marinha e, consequentemente, a saúde do planeta.</p> 
+                </section>   
+                
+
+                <section id="rios mais poluidos">
+                    <h2>A Poluição dos Grandes Rios: Um Retrato da Crise Ambiental Contemporânea</h2> 
+                    <p>Os grandes rios do planeta, outrora símbolos de vida e fertilidade, transformaram-se em espelhos da crise ambiental global. O Yangtzé, artéria vital da China, carrega hoje uma carga pesada de metais como cádmio e chumbo, provenientes do parque industrial que margeia seu curso. Amostras coletadas em Xangai revelam concentrações de mercúrio 40 vezes superiores aos limites da OMS, enquanto ilhas de plástico flutuante obstruem seu delta.</p>
+                    <p>Na Índia, as águas sagradas do Ganges escondem um legado tóxico de desenvolvimento desordenado. O Instituto Central de Pesquisa em Saúde Pública registrou níveis de coliformes fecais que tornam o rio mortal em Varanasi - cada mililitro de água contém mais de um milhão de bactérias patogênicas. As indústrias de curtume em Kanpur despejam diariamente 50 toneladas de cromo hexavalente, substância cancerígena que tinge o rio de vermelho em alguns trechos.</p>
+                    <p>O Nilo, berço da civilização faraônica, enfrenta uma silenciosa revolução química. Agricultores egípcios relatam colheitas minguantes devido à irrigação com água contaminada por pesticidas organoclorados. No delta, peixes apresentam tumores externos, enquanto hepatite E se espalha entre comunidades ribeirinhas que dependem do rio para consumo direto.</p>
+                    <p>Na América do Sul, o Amazonas sofre com o mercúrio da mineração ilegal - um estudo da Fiocruz encontrou níveis 10 vezes acima do seguro em indígenas Munduruku. O rio, que abriga 20% da água doce do planeta, vê sua biodiversidade ameaçada por garimpos que despejam 100 toneladas do metal anualmente. Correntes outrora cristalinas na floresta agora brilham com um tom suspeito de ouro líquido.</p>
+                   <hr>  
+                
+                     
+                   <div class="lista">
+                      <div class="img-st">
+                        <img src="../img/168938257364b1eead982bc_1689382573_3x2_md.jpg" loading="lazy">
+                        <p class="row"> Fonte Disponível em: 
+                        <a href="https://www1.folha.uol.com.br/ambiente/2023/07/despoluicao-do-rio-tiete-vira-prioridade-apos-conclusao-de-obras-no-pinheiros.shtml" target="_blank">
+                        Folha Uol
+                        </a></p>
+                      </div>   
+                      
+                      <div class="img-st">
+                          <img src="../img/china-rio.jpg" loading="lazy">
+                          <p class="row"> Fonte Disponível em: 
+                          <a href="https://megapolitan.antaranews.com/berita/354169/jawa-barat-susun-strategi-untuk-citarum-harum" target="_blank">
+                          Megapolitan
+                          </a></p>
+                        </div> 
+                   </div><hr> 
+                   <p>O Rio Tietê, um dos mais importantes do estado de São Paulo, sofre com décadas de poluição devido ao despejo de esgoto doméstico, resíduos industriais e lixo, resultando em trechos altamente contaminados e com espuma tóxica. Apesar de ser um rio de caudal significativo, suas águas poluídas eventualmente chegam ao Rio Paraná e, posteriormente, ao Oceano Atlântico, contribuindo para a degradação ambiental marinha com contaminantes químicos e orgânicos que afetam a biodiversidade e a qualidade da água costeira.</p>    
+                   <p>A Europa não escapa deste cenário. O Reno, símbolo da recuperação ambiental nos anos 90, enfrenta novos desafios com microplásticos e resíduos farmacêuticos. Peixes apresentam disfunções hormonais devido a anticoncepcionais não filtrados, enquanto sedimentos acumulam PCBs - substâncias banidas há décadas, mas persistentes no ecossistema.</p>
+                   <p>Os efeitos se propagam além dos leitos. Quando o Ganges deságua na Baía de Bengala, cria uma zona morta de 60.000 km² onde nada sobrevive. O Yangtzé exporta sua poluição para o Mar da China Oriental, sufocando recifes de coral. O Mississippi carrega nitratos do cinturão agrícola americano até o Golfo do México, onde criou a maior zona hipóxica do mundo.</p>   
+                   <p>Este é o legado do Antropoceno: cursos d'água que carregam não apenas sedimentos, mas o peso das escolhas humanas. De veículos da vida, transformaram-se em testemunhas silenciosas de um equilíbrio rompido, suas correntes agora marcadas por substâncias que a natureza nunca soube processar.</p>
+                 </section>  
+              
+                      <!-- Seção do Gráfico -->
+            <section class="grafico-container">
+                <h2>Crescimento de Lixo (2020-2024)</h2>
+                <div class="grafico">
+                    <div class="barra-container">
+                        <span class="toneladas">8,3M t</span>
+                        <div class="barra" style="height: 40%;"></div>
+                    </div>
+                    <div class="barra-container">
+                        <span class="toneladas">8,5M t</span>
+                        <div class="barra" style="height: 45%;"></div>
+                    </div>
+                    <div class="barra-container">
+                        <span class="toneladas">8,8M t</span>
+                        <div class="barra" style="height: 50%;"></div>
+                    </div>
+                    <div class="barra-container">
+                        <span class="toneladas">9,1M t</span>
+                        <div class="barra" style="height: 55%;"></div>
+                    </div>
+                    <div class="barra-container">
+                        <span class="toneladas">9,5M t</span>
+                        <div class="barra" style="height: 60%;"></div>
+                    </div>
+                </div>
+                <div class="anos">
+                    <span>2020</span>
+                    <span>2021</span>
+                    <span>2022</span>
+                    <span>2023</span>
+                    <span>2024</span>
+                </div><hr>
+                <p>O crescimento do lixo no oceano tem sido uma preocupação crescente nos últimos anos. Dados indicam que o volume de plástico no mar pode triplicar até 2040, atingindo entre 23 e 37 milhões de toneladas por ano, se não houver uma ação drástica de redução. Essa quantidade significa que, em 2040, pode haver mais plástico do que peixes no oceano.</p>
+            </section>
+
+                    
+                <section id="atmosférica">
+                    <h2>Poluição Atmosférica</h2> 
+                   <p>Segundo pesquisas que duraram em média 8 anos, cientistas chegaram a resultados aonde apontam que criaturas marinhas em estágio de desenvolvimento devem ser as mais prejudicadas pela emissão de gás carbono, quem vêm elevando a acidez dos oceanos no mundo. </p>
+                   <p>Entre os animais mais afetados são os peixes como o bacalhau, cujas taxas de sobrevivência na fase juvenil podem cair drasticamente em cenários de alta acidificação. Experimentos indicam que, em condições extremas, apenas uma pequena parcela dos filhotes atinge a maturidade. Moluscos, como mexilhões e ouriços-do-mar, também sofrem com a redução do pH, que dificulta a formação de suas conchas e estruturas calcárias.</p>
+                   <p>Por outro lado, alguns organismos apresentam maior resiliência. Crustáceos como os cirrípedes (percebes) mostram pouca sensibilidade às mudanças, enquanto certas algas podem até se beneficiar do excesso de CO₂, utilizando-o para fotossíntese. Contudo, essas exceções não compensam os danos à maioria das espécies, especialmente corais, essenciais para a manutenção de recifes.</p>
+                   <hr>  
+                 
+                
+                    <div class="lista">
+                        <div class="img-st">
+                         <img src="../img/istockphoto-1136442231-612x612.jpg" loading="lazy">
+                         <p class="row"> Fonte Disponível em: 
+                         <a href="https://www.istockphoto.com/br/search/2/image-film?phrase=baiacu+de+espinho" target="_blank">
+                         istockphoto
+                         </a></p>
+                        </div>    
+                        
+                        <div class="img-st">
+                            <img src="../img/crrípedes.jpeg" loading="lazy">
+                            <p class="row"> Fonte Disponível em: 
+                            <a href="https://www.biodiversity4all.org/taxa/210289-Cirripedia" target="_blank">
+                            Bio diversity4all
+                            </a></p>
+                           </div>  
+                   
+                    </div><hr>
+                    <p>O aumento da acidez está diretamente ligado à queima de combustíveis fósseis, que libera grandes quantidades de CO₂ na atmosfera. Quando dissolvido na água, esse gás forma ácido carbônico, reduzindo o pH oceânico. Desde a Revolução Industrial, o pH médio da superfície marinha caiu de 8,2 para 8,1, representando um aumento de aproximadamente 26% na acidez. Além das emissões, outros fatores agravam o problema:</p>
+                        
+                        <ul>
+                            <li><strong>Poluição costeira</strong> (esgoto e resíduos industriais).</li>
+                            <li><strong>Uso excessivo de fertilizantes agrícolas,</strong> que provocam proliferação de algas tóxicas.</li>
+                            <li><strong>Pesca predatória,</strong>que desequilibra cadeias alimentares.</li>
+                        </ul>
+
+                        <p>Cientistas investigam se espécies marinhas podem se adaptar evolutivamente a essas mudanças. Projetos como o Bioacid, liderado por instituições alemãs, analisaram organismos em diferentes fases de vida, desde micróbios até peixes, em regiões como o Mar do Norte e o Ártico. Os resultados sugerem que, embora alguns indivíduos desenvolvam tolerância, a velocidade das alterações químicas supera a capacidade de adaptação natural.</p>
+                </section>
+
+                    
+                    <section id="Documentário">
+                        <div class="topico-card">
+                            <h2>Videos Relacionados a Leitura</h2>
+
+                             <div class="video-container">
+                                    <div class="video-card">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3dmZrzeg2e0?si=gvKJpUdLXSV4k1Zr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                        <div class="video-descricao">
+                                          <h3>Poluição</h3>
+                                          <p>O plástico está cobrindo e destruindo nosso planeta</p>
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="video-card">
+                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mb-M9DGN_GQ?si=lS3fUu-BKu6U34Yp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                        <div class="video-descricao">
+                                     <h3>Microplásticos</h3>
+                                     <p>Como o Microplástico vem afetando os oceanos</p>
+                                    </div>
+                              </div>   
+                        </div>
+                    </section>
+            </main>   
+    <!--função para animação no carregamento do site-->
+    <script>
+        // Espera o DOM carregar completamente
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('main-content').style.opacity = '0'; // Deixa o conteúdo principal invisível
+
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.opacity = '0'; // Esconde o splash gradualmente
+                setTimeout(() => {
+                    document.getElementById('splash-screen').style.display = 'none'; // Remove o splash da tela
+                    document.getElementById('main-content').classList.add('show-content'); // Mostra o conteúdo principal
+                }, 500); // Espera 0.5s para remover da tela
+            }, 3000); // Espera 3s antes de iniciar a transição
+        });
+    </script>
+
+ 
+</body>
+</html>

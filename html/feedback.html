@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- Define o tipo do documento -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../img/baleia.ico" type="imagem/x-icon">
+    <title>Salve os Oceanos</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Importa o arquivo CSS -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+
+  <div id="main-content">
+    <header>
+      <div class="nav-container">
+        <a class="logo"><i>🌊</i> Impactos no oceano</a>
+        <nav>
+            <a href="exploração.html" class="nav-link"> Exploração de petróleo</a>
+            <a href="contaminação.html" class="nav-link">Contaminação de metais</a>
+            <a href="ajude.html" class="nav-link">Ajude o Mar</a>
+            <a href="feedback.html" class="nav-link active">Feedback</a>
+       </nav>
+
+       <nav class="secondary-menu">
+        <a href="#" class="menu-toggle" id="menuToggle">
+          <i class="icon-menu">☰</i> 
+        </a>
+        <ul class="submenu" id="submenu">
+          <li><a href="index.html">Poluição</a>
+          <li><a href="esgoto.html">Efluentes</a></li>  
+          <li><a href="micro.html">Microplástico</a></li>
+          <li><a href="vida.html">Vida marinha</a></li>
+          <li><a href="pesca.html">Pesca predatória</a></li>
+          <li><a href="clima.html">Climatização</a></li>
+          <li><a href="acidificação.html">Acidificação</a></li>
+          <li><a href="barco.html">Barcos</a></li>
+          <li><a href="exploração.html">Exploração de petróleo </a></li> 
+          <li><a href="contaminação.html">Contaminação de metais</a></li>
+          <li><a href="ajude.html">Ajude o Mar</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+
+    
+  <main>
+    <section class="feedback-section">
+        <div class="feedback">
+            <h2>O que Você achou do site?</h2>
+            <form id="form-feedback">
+                <label for="avaliacao">Sua avaliação:</label>
+                <select id="avaliacao">
+                    <option value="5">⭐⭐⭐⭐⭐ - Excelente</option>
+                    <option value="4">⭐⭐⭐⭐ - Muito bom</option>
+                    <option value="3">⭐⭐⭐ - Bom</option>
+                    <option value="2">⭐⭐ - Regular</option>
+                    <option value="1">⭐ - Ruim</option>
+                </select>
+        
+                <label for="comentario">Seu feedback:</label>
+                <textarea id="comentario" placeholder="Digite seu comentário"></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensagem-enviada" style="display: none;">Enviado com sucesso!</p>
+        </div>
+
+     
+        <div class="referencias">
+            <h2>Referências da Pesquisa</h2>
+
+            <p>Disponível em: 
+                <a href="https://jornal.usp.br/atualidades/o-brasil-esta-entre-os-20-paises-que-mais-contribuem-para-a-poluicao-nos-oceanos/" target="_blank">
+                    Jornal Usp
+                </a>
+            </p>
+
+            <p>Disponível em: 
+                <a href="https://www.cnnbrasil.com.br/nacional/pela-primeira-vez-pesquisadores-da-usp-encontram-lixo-no-oceano-profundo/" target="_blank">
+                   CNN Brasil
+                </a>
+            </p>
+
+            <p>Disponível em: 
+                <a href="https://www.uol.com.br/ecoa/ultimas-noticias/2025/03/16/nao-e-so-geleira-derretida-o-que-explica-aumento-surpresa-do-nivel-do-mar.htm" target="_blank">
+                   UOL
+                </a>
+            </p>
+
+            <p>Disponível em: 
+                <a href="https://brasilescola.uol.com.br/biologia/recifes-corais.htm" target="_blank">
+                    Brasil Escola
+                </a>
+
+                <p>Disponível em: 
+                    <a href="https://www.infoescola.com/ecologia/pesca-predatoria/" target="_blank">
+                        Info Escola
+                    </a>
+                </p>
+
+                <p>Disponível em: 
+                    <a href="https://www.scielo.br/j/sdeb/a/Bw9HVgLf4LtP3chrKntRgvp/" target="_blank">
+                        scielo
+                    </a>
+                </p>
+            </p>
+        </div>  
+        </div>  
+
+      
+     </section>  
+</main>
+
+<script>
+    document.getElementById('form-feedback').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o recarregamento da página
+    
+    // Mostra a mensagem
+    const mensagem = document.getElementById('mensagem-enviada');
+    mensagem.style.display = 'block';
+    
+    // Esconde a mensagem após 3 segundos 
+    setTimeout(function() {
+        mensagem.style.display = 'none';
+    }, 3000); // Ajuste o tempo conforme necessário
+    
+    // Limpa o formulário 
+    this.reset();
+});
+</script>
+
+</body>
+</html>
